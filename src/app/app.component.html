@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<hello name="{{ name }}"></hello>
+<input type="text" [(ngModel)]= "person" >
+
+<ul [ngSwitch]="person">
+<li *ngSwitchCase="'Mohan'">
+Hello Mohan</li>
+<li *ngSwitchCase="'Naivya'">
+Hello Naivya</li>
+<li *ngSwitchCase="'Abhay'">
+Hello Abhay</li>
+<li *ngSwitchCase="'Somya'">
+Hello Somya</li>
+<li *ngSwitchDefault>Bye bye</li>
+  </ul>
+<hr>
+
+<div style="text-align:center" >
+<h1>
+  Welcome to {{title}}
+  </h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">TestWeb</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a routerLink="home">Home</a></li>
+      <li><a routerLink="">About</a></li>
+      <li><a routerLink="dashboard">Dashboard</a></li>
+      <li><a routerLink="ab">Display</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+  <router-outlet></router-outlet>
+  </div>
+
+
